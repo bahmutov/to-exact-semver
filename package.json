@@ -1,0 +1,31 @@
+{
+  "name": "to-exact-semver",
+  "version": "1.0.0",
+  "description": "Removes fuzzy characters from semver string",
+  "main": "src/to-exact.js",
+  "scripts": {
+    "test": "mocha src/*-spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bahmutov/to-exact-semver.git"
+  },
+  "keywords": [
+    "semver",
+    "exact",
+    "make",
+    "fuzzy",
+    "util"
+  ],
+  "author": "Gleb Bahmutov <gleb.bahmutov@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bahmutov/to-exact-semver/issues"
+  },
+  "homepage": "https://github.com/bahmutov/to-exact-semver#readme",
+  "devDependencies": {
+    "check-more-types": "2.2.0",
+    "lazy-ass": "1.1.0",
+    "mocha": "2.3.4"
+  }
+}
