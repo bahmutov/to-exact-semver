@@ -17,7 +17,7 @@
 
 ```js
 var toExact = require('to-exact-semver');
-toExact('~4.1.1'); // '4.1.1'
+toExact('foo-lib', '~4.1.1'); // '4.1.1'
 ```
 
 ### Small print
