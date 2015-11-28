@@ -1,14 +1,15 @@
 {
   "name": "to-exact-semver",
-  "version": "1.0.0",
   "description": "Removes fuzzy characters from semver string",
   "main": "src/to-exact.js",
+  "version": "0.0.0-semantic-release",
   "scripts": {
-    "test": "mocha src/*-spec.js"
+    "test": "mocha src/*-spec.js",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bahmutov/to-exact-semver.git"
+    "url": "https://github.com/bahmutov/to-exact-semver.git"
   },
   "keywords": [
     "semver",
@@ -26,6 +27,7 @@
   "devDependencies": {
     "check-more-types": "2.2.0",
     "lazy-ass": "1.1.0",
-    "mocha": "2.3.4"
+    "mocha": "2.3.4",
+    "semantic-release": "^4.3.5"
   }
 }
