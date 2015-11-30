@@ -8,12 +8,16 @@ function removeFuzziness(version) {
     .replace('~', '');
 }
 
+function removeLeadingV(version) {
+  return version.replace(/^v/, '');
+}
+
 function toExact(name, version, fallback) {
   if (arguments.length === 1) {
     version = name;
     name = 'unknown';
   }
-  var cleaned = removeFuzziness(version);
+  var cleaned = removeLeadingV(removeFuzziness(version));
   if (!isStrict(cleaned)) {
     // TODO use fallback function
     /* eslint no-console:0 */

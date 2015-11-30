@@ -9,6 +9,11 @@ describe('to-exact', function () {
     la(check.fn(toExact));
   });
 
+  it('removes leading v', function () {
+    var cleaned = toExact('v2.4.1');
+    la(cleaned === '2.4.1', cleaned);
+  });
+
   it('passes already strict version', function () {
     var strictVersions = ['0.1.0', '1.1.0', '0.5.1'];
     strictVersions.forEach(function (version) {

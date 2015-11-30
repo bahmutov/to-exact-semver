@@ -6,7 +6,8 @@
   "scripts": {
     "test": "mocha src/*-spec.js",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post",
-    "commit": "commit-wizard"
+    "issues": "git-issues",
+    "commit": "git-issues && commit-wizard"
   },
   "repository": {
     "type": "git",
@@ -27,6 +28,7 @@
   "homepage": "https://github.com/bahmutov/to-exact-semver#readme",
   "devDependencies": {
     "check-more-types": "2.2.0",
+    "git-issues": "1.2.0",
     "lazy-ass": "1.1.0",
     "mocha": "2.3.4",
     "pre-git": "1.4.0",
