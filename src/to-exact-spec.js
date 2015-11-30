@@ -14,6 +14,11 @@ describe('to-exact', function () {
     la(cleaned === '2.4.1', cleaned);
   });
 
+  it('handles major.minor format', function () {
+    var cleaned = toExact('2.4');
+    la(cleaned === '2.4.0', cleaned);
+  });
+
   it('passes already strict version', function () {
     var strictVersions = ['0.1.0', '1.1.0', '0.5.1'];
     strictVersions.forEach(function (version) {
